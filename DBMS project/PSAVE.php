@@ -8,20 +8,20 @@
  <body>
 <table class="table table-bordered">
 
-<tr bgcolor=blue><td align=center><font SIZE=6 color=white>HOSPITAL
+<tr bgcolor=blue><td align=center><font SIZE=6 color=white>EMPLOYEE
 MANAGEMENT SYSTEM</font></td></tr>
 <tr><td><table align=center width=750 cellspacing=0 cellpadding=5>
-<tr><td align=center><a href=dlist.php>Doctors</td><td align=center><a
-href=plist.php>Patients</td><td align=center><a
-href=alist.php>Appointments</td>
+<tr><td align=center><a href=dlist.php>Employee</td><td align=center><a
+href=plist.php>Projects</td><td align=center><a
+href=alist.php>Meetings</td>
 </table></td></tr>
 <tr bgcolor=red><td ><font size=4 color=white>Save
-Patient</font></td></tr>
+Project/Product</font></td></tr>
 <?php
 
 $name=trim($_POST["name"]);
-$sex=trim($_POST["sex"]);
-$addr=trim($_POST["addr"]);
+$sex=trim($_POST["type"]);
+$addr=trim($_POST["dur"]);
 $error=0;
 if ($name=="") { $error=1; echo "<tr><td><font color=red size=4>Name
 can't empty</font></td></tr>"; }

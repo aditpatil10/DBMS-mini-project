@@ -6,15 +6,15 @@
  </head> 
  <body>
 <table class="table table-bordered">
-<tr bgcolor=blue><td align=center><font SIZE=6 color=white>HOSPITAL
+<tr bgcolor=blue><td align=center><font SIZE=6 color=white>EMPLOYEE
 MANAGEMENT SYSTEM</font></td></tr>
 <tr><td><table align=center width=750 cellspacing=0 cellpadding=5>
-<tr><td align=center><a href=dlist.php>Doctors</td><td align=center><a
-href=plist.php>Patients</td><td align=center><a
-href=alist.php>Appointments</td>
+<tr><td align=center><a href=dlist.php>Employee</td><td align=center><a
+href=plist.php>Projects</td><td align=center><a
+href=alist.php>Meetings</td>
 </table></td></tr>
 <tr bgcolor=red><td ><font size=4 color=white>Update
-patient</font></td></tr>
+project</font></td></tr>
 <?php
 
 $rno=trim($_POST["rno"]);

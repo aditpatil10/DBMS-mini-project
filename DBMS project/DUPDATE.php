@@ -1,19 +1,19 @@
 <?php require('connection.php');?>
 <html>
  <head>
-  <title>Update Doctor</title>
+  <title>Update Employee</title>
  </head>
 <body bgcolor="#eee">
 <table border="1" align=center width=750 cellspacing=0 cellpadding=5>
-<tr bgcolor=blue><td align=center><font SIZE=6 color=white>HOSPITAL
+<tr bgcolor=blue><td align=center><font SIZE=6 color=white>EMPLOYEE
 MANAGEMENT SYSTEM</font></td></tr>
 <tr><td><table align=center width=750 cellspacing=0 cellpadding=5>
-<tr><td align=center><a href=dlist.php>Doctors</td><td align=center><a
-href=plist.php>Patients</td><td align=center><a
-href=alist.php>Appointments</td>
+<tr><td align=center><a href=dlist.php>Employee</td><td align=center><a
+href=plist.php>Projects</td><td align=center><a
+href=alist.php>Meetings</td>
 </table></td></tr>
 <tr bgcolor=red><td ><font size=4 color=white>Update
-Doctor</font></td></tr>
+Employee</font></td></tr>
 
 <?php
 

@@ -5,7 +5,7 @@ error_reporting(1);
 <html>
  <head>
  <meta charset="UTF-8">
-  <title>Home Page</title>
+  <title>Meetings</title>
   
   
   <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css'>
@@ -17,24 +17,25 @@ error_reporting(1);
  <body>
  <nav>
     <div class="nav-wrapper blue lighten-1">
-      <a href="#" class="brand-logo">Logo</a>
+      <a href="#" class="brand-logo">Wayne Enterprises</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li class="texts"><a href="sass.html" class="texts">Home</a></li>
-        <li><a href=dlist.php class="texts">Doctors</a></li>
-        <li><a href=plist.php class="texts">Patients</a></li>
-        <li><a href=alist.php class="texts">Appointments</a></li>
+        <li class="texts"><a href="home.php" class="texts">Home</a></li>
+<li><a href=dlist.php class="texts">Employee</a></li>
+        <li><a href=plist.php class="texts">Projects</a></li>
+        <li><a href=alist.php class="texts">Meetings</a></li>
         <li><a href="logout.php" class="texts">Log Out</a></li>
       </ul>
     </div>
   </nav>
 
-
-<tr bgcolor=red><td ><font size=4 color=white>Appointments
-List</font></td></tr>
-<tr><td><a href=app.php>Add New Appointments</a></td></tr>
+<table class="table table-bordered">
+<tr bgcolor=blue><td align=center><font SIZE=6 color=white>EMPLOYEE
+MANAGEMENT SYSTEM</font></td></tr>
+<tr bgcolor=red><td ><font size=4 color=white>List of meetings and Audits</font></td></tr>
+<tr><td><a href=app.php>Add New Meeting/Audit</a></td></tr>
 <tr><td><table width=750 cellspacing=0 cellpadding=5>
-<tr bgcolor=#ccccc><td align=center>S No</td><td align=center>Patient
-Name</td><td align=center>Doctor
+<tr bgcolor=#ccccc><td align=center>S No</td><td align=center>Topic
+Name</td><td align=center>Employee
 Name</td><td align=center>Time</td>
 <td align=center>Date</td><td
 align=center>Options</td></tr>
@@ -64,8 +65,8 @@ Not Found</font></td></tr>";?>
 <tr bgcolor=red><td><font size=4 color=white>Deleted
 Records</font></td></tr>
 <tr><td><table width=750 cellspacing=0 cellpadding=5>
-<tr bgcolor=#ccccc><td align=center>S No</td><td align=center>Patient
-Name</td><td align=center>Doctor
+<tr bgcolor=#ccccc><td align=center>S No</td><td align=center>Topic
+Name</td><td align=center>Employee
 Name</td><td align=center>Time</td>
 <td align=center>Date</td><td
 align=center>Options</td></tr>

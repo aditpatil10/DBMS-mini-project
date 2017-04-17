@@ -1,22 +1,22 @@
 <?php require('connection.php');?>
 <html>
  <head>
-  <title>Add Appointments</title>
+  <title>Add Meetings/Audits</title>
  <link rel="stylesheet" href="css/bootstrap.css"/>
  </head> 
  <body>
 <table class="table table-bordered">
-<tr bgcolor=blue><td align=center><font SIZE=6 color=white>HOSPITAL
+<tr bgcolor=blue><td align=center><font SIZE=6 color=white>EMPLOYEE
 MANAGEMENT SYSTEM</font></td></tr>
 <tr><td><table align=center width=750 cellspacing=0 cellpadding=5>
-<tr><td align=center><a href=dlist.php>Doctors</td><td align=center><a
-href=plist.php>Patients</td><td align=center><a
-href=alist.php>Appointments</td>
+<tr><td align=center><a href=dlist.php>Employee</td><td align=center><a
+href=plist.php>Projects</td><td align=center><a
+href=alist.php>Meetings</td>
 </table></td></tr>
-<tr bgcolor=red><td ><font size=4 color=white>Add Appointments</font></td></tr>
+<tr bgcolor=red><td ><font size=4 color=white>Add Meeting/Audit</font></td></tr>
 <form name=fdadd method=post action=asave.php>
 <tr><td><table width=750 cellspacing=0 cellpadding=5>
-<tr><td>Patient Id</td><td><select name=pat style="width:230px">
+<tr><td>Related Project</td><td><select name=pat style="width:230px">
 <?php
 
 
@@ -24,7 +24,7 @@ $rs1=mysql_query("SELECT * from patient where pshow='Y' order by
 pname;");
 $sno=1;
 ?>
-<option selected="selected" disabled="disabled">Patient Id</option>
+<option selected="selected" disabled="disabled">Related project</option>
 <?php
 while( $row=mysql_fetch_array($rs1)) {
  $patient_id=$row[0];
@@ -37,8 +37,8 @@ while( $row=mysql_fetch_array($rs1)) {
 ?>
 </select>
 </td></tr>
-<tr><td>Doctor Id</td><td><select name=doc style="width:230px">
-<option selected="selected" disabled="disabled">Doctor Id</option>
+<tr><td>Employee to take</td><td><select name=doc style="width:230px">
+<option selected="selected" disabled="disabled">Employee</option>
 <?php
 
 $rs2=mysql_query("SELECT * from doct where dshow='Y' order by
